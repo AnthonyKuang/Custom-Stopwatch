@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'DS-Digital';
+  font-style: normal;
+  font-weight: normal;
+  src: url('ds_digital/DS-DIGI.TTF');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: relative;
+}
+
+figure img {
+  width: 100%;
+}
+
+.time-area {
+  width: 55vw;
+  height: 34vh;
+  background: #a2b7b9;
+  position: absolute;
+  top: 71vh;
+  left: 21vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 10px solid #5f7577;
+}
+
+#clock {
+  font-size: 180px;
+  font-family: 'DS-Digital';
+}
+
+button {
+  position: absolute;
+}
+
+#clear {
+  top: 3vh;
+  left: 38vw;
+  width: 21vw;
+  height: 7vh;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#stop {
+  width: 17vw;
+  height: 8vh;
+  transform: skewY(145deg);
+  top: 19vh;
+  left: 15vw;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#go {
+  width: 17vw;
+  height: 9vh;
+  transform: skewY(37deg);
+  top: 19vh;
+  right: 17vw;
+  cursor: pointer;
+  opacity: 0;
+}
+
+#go:disabled {
+  cursor: not-allowed;
+  opacity: 0;
+}
+
